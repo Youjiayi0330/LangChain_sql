@@ -1,4 +1,3 @@
-# models.py
 from sqlalchemy import Column, String, Float, Integer
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -16,6 +15,4 @@ class Device(Base):
     max_flight_weight = Column(Float)
     manufacturer = Column(String(50))
 
-
-# 指定模块的公共接口
 __all__ = ['Device', 'Base']
